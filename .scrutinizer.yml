@@ -15,7 +15,7 @@ build:
               format: "clover"
       cache:
         directories:
-          - .next/cache
+          - .next/cache/
   tests:
     before:
       - command: yarn build
