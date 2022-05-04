@@ -18,6 +18,6 @@ build:
           - .next/cache/
   tests:
     before:
-      - command: yarn build
+      - command: npm run build
         idle_timeout: 5000
   root_path: "./"
