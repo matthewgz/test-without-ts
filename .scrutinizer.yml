@@ -14,9 +14,9 @@ build:
               file: "coverage/clover.xml"
               format: "clover"
   tests:
-    cache:
-      directories:
-        - .next/cache
     before:
+      - cache:
+        directories:
+          - .next/cache
       - command: yarn build
         idle_timeout: 5000
