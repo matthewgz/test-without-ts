@@ -15,8 +15,9 @@ build:
               format: "clover"
       cache:
         directories:
-          - .next/cache/
+          - public/.next/cache/
   tests:
     before:
       - command: yarn build
         idle_timeout: 5000
+  root_path: "./"
