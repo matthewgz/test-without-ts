@@ -19,6 +19,6 @@ build:
           - .next/cache/
   tests:
     before:
-      - command: yarn build
+      - command: yarn dev
         idle_timeout: 5000
   root_path: "./"
