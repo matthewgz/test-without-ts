@@ -14,10 +14,11 @@ build:
               file: "coverage/clover.xml"
               format: "clover"
       cache:
+        disabled: false
         directories:
           - .next/cache/
   tests:
     before:
-      - command: npm run build
+      - command: yarn build
         idle_timeout: 5000
   root_path: "./"
